@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="x2.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#newsMenu" aria-controls="newsMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: white">Menu</span>             
+            </button>
+            <div class="collapse navbar-collapse" id="newsMenu">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#" style="color: white">Home</a>
+                    <a class="nav-item nav-link" href="#aboutme" style="color: white">About Me</a>
+                    <a class="nav-item nav-link" href="#skills" style="color: white;">My Skills</a>
+                    <a class="nav-item nav-link" href="#projects" style="color: white;">Projects</a>
+                    <a class="nav-item nav-link" href="#footer" style="color: white;">How To Reach Me</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="img">
+                    <img id="banner-image" class="img-fluid" src="https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+                    <div class="banner-title">
+              <p id="wordscroller" style="color:black; font-weight: normal; font-size: xx-large;"><b></b></p>
+                    <script>
+                    function scroll(pos)  
+                    {  
+                        var txt = "Debanshu Mutt";  
+                        var output = "";  
+                        var screen = document.getElementById("wordscroller");  
+                        for (var i = 0; i < pos; i++)  
+                        {  
+                            output += txt.charAt(i);  
+                        }  
+                        output += txt.charAt(pos);  
+                        screen.innerHTML = output;  
+                        pos++;  
+                        if (pos != txt.length)  
+                        {  
+                            window.setTimeout(function () { scroll(pos); }, 400);  
+                        }  
+                        else  
+                        {  
+                            window.setTimeout(function () { scroll(0); }, 500);  
+                        }  
+                    }  
+                    scroll(0);  
+                </script>   
+                </div>
+                <div class="banner-subtitle">
+                <marquee behavior="" direction="" style="color: white; margin-top: 2%;">Web Developer</marquee>
+            </div>  
+                </div>
+                </div>
+                <br> <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron" id="aboutme">
+                <h2 class="display-4" style="text-align: center;">About Me</h2>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="pic.jpg" alt="" class="img-fluid">
+                       </div>
+                    <div class="col-md-6" style="margin: 10px;">
+                 <p>I am currently pursuing Computer Science Engineering at KIIT University. <br>
+                    I have a knack for Web Designing and Development.
+                    <br>
+                    You want your website to look Professional? Flashy? Different? <br>
+                    Look no more,
+                   <b> I am your guy! </b></p>
+                   <a href="./DebanshuMutt_InternshalaResume (2).pdf" download="Resume"> 
+                    <button class="btn btn-primary">Resume</button> 
+                   </a>
+                 </div>
+                 </div>
+            </div>
+            </div>
+            </div>
+            <hr>
+        <div class="skills-title" id="skills">
+            <p style="text-align: center"> <b> My Skills </b> </p>
+        </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+               <div class="col-xs-5 col-sm-6 col-md-3">
+                   <img src="download (1).png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-xs-5 col-sm-6 col-md-3">
+                   <img src="css.jpg" alt="" class="img-fluid" style="margin-bottom: 1%;">
+                  </div>
+                  <div class="col-xs-5 col-sm-6 col-md-3">
+                   <img src="js.png" alt="" class="img-fluid" style="margin-bottom: 1%;" >
+                  </div>
+                  <div class="col-xs-5 col-sm-6 col-md-3">
+                   <img src="./bootsrap.png" alt="">
+                  </div>
+                  
+            </div>
+
+        </div>
+
+    </div>
+      <div class="row" id="projects" style="margin-top: 4%;">
+        <div class="col-md-12">
+            <h4 class="text-center" style="font-size: 2em;"><b>Projects</b></h4>
+            <hr class="my-4">
+        </div>
+      </div>
+      <div class="row">
+           <div class="col-md-6">
+            <img src="./Capture.PNG" alt="" id="cal" class="img-fluid" style="border: 2px solid black;">
+           </div>
+           <div class="col-md-6">
+           <div class="row">
+           <div class="col-md-12">
+           <h1>Simple Interest Calculator</h1>
+           </div>
+           </div>    
+           <div class="row">
+            <div class="col-md-12">
+                <p>Simple Interest Calculator made using HTML CSS and Javascript. <br> The use of DOM methods like getElementById, innerHTML used.
+                On entering principle amount, rate and time. Interest is displayed.
+                </p>
+               
+            </div>
+        </div> 
+        </div>  
+      </div>    
+       <div class="row mt-2">
+        <div class="col-md-6">
+         <img src="./Capture1.PNG" id="Medical" alt="" class="img-fluid" style="padding: 1%; border: 2px solid black;">
+        </div>
+        <div class="col-md-6">
+        <div class="row">
+        <div class="col-md-12">
+        <h1>Medical Inventory and Dashboard</h1>
+        </div>
+        </div>    
+        <div class="row">
+         <div class="col-md-12">
+             <p>Medical Inventory and dashboard made using HTML,CSS,Javascript,VueJs,Nodejs,MySQL <br>
+                 You can view the medicines present, delete ,update as well as add medicines to the database.
+             </p>
+            
+         </div>
+     </div>      
+        </div> 
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-6">
+         <img src="./Capture2.PNG" id="food" alt="" class="img-fluid" style="border: 2px solid black; padding: 1%; margin-bottom: 1%;">
+        </div>
+        <div class="col-md-6">
+        <div class="row">
+        <div class="col-md-12">
+        <h1>Mobile Responsive Food Junction</h1>
+        </div>
+        </div>    
+        <div class="row">
+         <div class="col-md-12">
+             <p>Food Junction made using HTML,CSS,Javascript and Bootstrap Framework. <br> Collapsible navs
+            , carousels,cards and forms used.
+             </p>
+            
+         </div>
+     </div>      
+        </div> 
+    </div>
+    <hr style="color: black;">
+    <div class="row" id="contact">
+        <div class="col-md-12" id="footer">
+           <footer class="page-footer font-small id" style="background-color : black; color: white;">
+               <!-- Footer Text -->
+               <div class="container-fluid text-center text-md-left">
+             
+                 <!-- Grid row -->
+                 <div class="row">
+             
+                   <!-- Grid column -->
+                   <div class="col-md-6 mt-md-0 mt-3">
+             
+                     <!-- Content -->
+                     <h5 class="text-uppercase font-weight-bold">Contact Details</h5>
+                     <p>debanshumutt1882000@gmail.com <br>
+                         Jamshedpur,Jharkhand
+             
+                     </p>
+             
+                   </div>
+                   <!-- Grid column -->
+             
+                   <hr class="clearfix w-100 d-md-none pb-3">
+             
+                   <!-- Grid column -->
+                   <div class="col-md-6 mb-md-0 mb-3">
+             
+                     <!-- Content -->
+                     <h5 class="text-uppercase font-weight-bold">Social Media</h5>
+                         <a href="https://www.facebook.com/debanshu.mutt/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                         <a href="https://www.linkedin.com/in/debanshu-mutt-9045821a2/"><i id="social-tw" class="fa fa-linkedin-square fa-3x social"></i></a>
+                   </div>
+                   <!-- Grid column -->
+             
+                 </div>
+                 <!-- Grid row -->
+             
+               </div>
+               <!-- Copyright -->
+             
+             </footer>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
