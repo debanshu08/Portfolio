@@ -11,7 +11,11 @@
     position: relative;
     text-align: center;
 }
-.
+.img-container{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
 .navbar{
     background-color: black;
 }
